@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/base"
+        android:title="标准"/>
+    <item
+        android:id="@+id/extend"
+        android:title="科学"/>
+    <item
+        android:id="@+id/transform"
+        android:title="进制转化"/>
+    <item
+        android:id="@+id/help"
+        android:title="帮助"/>
+    <item
+        android:id="@+id/exit"
+        android:title="退出"/>
+</menu>
