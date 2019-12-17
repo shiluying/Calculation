@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+     <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/binary_edittext"
@@ -25,7 +27,9 @@
         app:layout_marginTopPercent="0%"
         app:layout_widthPercent="33.3%">
     </Spinner>
-    <TextView
+     <TextView
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/binary_textview"
@@ -54,7 +58,9 @@
         app:layout_widthPercent="33.3%"
         android:text="进制转换">
     </Button>
-    <EditText
+     <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/length_edittext"
@@ -73,8 +79,9 @@
         app:layout_marginTopPercent="20%"
         app:layout_widthPercent="33.3%">
     </Spinner>
-    <TextView
-        android:textSize="30dp"
+     <TextView
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/length_textview"
@@ -103,7 +110,9 @@
         app:layout_widthPercent="33.3%"
         android:text="长度转换">
     </Button>
-    <EditText
+     <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/volume_edittext"
@@ -122,7 +131,9 @@
         app:layout_marginTopPercent="40%"
         app:layout_widthPercent="33.3%">
     </Spinner>
-    <TextView
+     <TextView
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/volume_textview"
@@ -152,7 +163,9 @@
         android:text="体积转换">
     </Button>
 
-    <EditText
+     <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/exchange_edittext"
@@ -171,7 +184,9 @@
         app:layout_marginTopPercent="60%"
         app:layout_widthPercent="33.3%">
     </Spinner>
-    <TextView
+     <TextView
+        android:gravity="center|bottom"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/exchange_textview"
@@ -199,5 +214,48 @@
         app:layout_marginTopPercent="60%"
         app:layout_widthPercent="33.3%"
         android:text="汇率转换">
+    </Button>
+    <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/date_edittext1"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="80%"
+        app:layout_widthPercent="33.3%">
+    </EditText>
+    <EditText
+        android:gravity="center|bottom"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/date_edittext2"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="33.3%"
+        app:layout_marginTopPercent="80%"
+        app:layout_widthPercent="33.3%">
+    </EditText>
+    <TextView
+        android:gravity="center|bottom"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/date_textview"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="90%"
+        app:layout_widthPercent="33.3%">
+    </TextView>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/date_button"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="66.6%"
+        app:layout_marginTopPercent="80%"
+        app:layout_widthPercent="33.3%"
+        android:text="时间转换">
     </Button>
 </androidx.percentlayout.widget.PercentFrameLayout>

@@ -23,6 +23,8 @@ public class Calculation {
         function_list.add("n³");
         function_list.add("n²");
         function_list.add("1/x");
+        function_list.add("lg");
+        function_list.add("ln");
     }
 
     //处理负数运算
@@ -101,15 +103,16 @@ public class Calculation {
         }
         double tempResult=calculate(expression);
         int flag=0;
+        double radians = Math.toRadians(tempResult);
         switch (fun){
             case "sin":
-                tempResult= Math.sin(tempResult);
+                tempResult= Math.sin(radians);
                 break;
             case "cos":
-                tempResult= Math.cos(tempResult);
+                tempResult= Math.cos(radians);
                 break;
             case "tan":
-                tempResult= Math.tan(tempResult);
+                tempResult= Math.tan(radians);
                 break;
             case "lg":
                 tempResult= Math.log10(tempResult);
@@ -119,7 +122,6 @@ public class Calculation {
                 break;
             case "^":
                 String num="";
-                Log.i("TEST",index+"===="+s);
                 for(int i=index-1;i>=0;i--){
                     if(!operator.contains(String.valueOf(s.charAt(i)))){
                         num= String.valueOf(s.charAt(i))+num;
@@ -128,11 +130,9 @@ public class Calculation {
                         break;
                     }
                 }
-                Log.i("TEST",num+"===="+(int)tempResult);
                 if((int)tempResult<0){
 
                     tempResult=calculate("1÷"+power(Double.valueOf(num),(int)tempResult)) ;
-                    Log.i("TEST","ss"+tempResult);
                 }else{
                     tempResult=power(Double.valueOf(num),(int)tempResult);
                 }

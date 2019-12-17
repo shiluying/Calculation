@@ -1,8 +1,11 @@
 package com.shiluying.calculation;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ExtendActivity extends MainActivity implements View.OnClickListener {
 
@@ -49,4 +52,32 @@ public class ExtendActivity extends MainActivity implements View.OnClickListener
         button19.setOnClickListener(this);
         button20.setOnClickListener(this);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        Intent intent;
+        switch (item.getItemId()){
+            case R.id.base:
+                intent=new Intent(ExtendActivity.this,MainActivity.class);
+                break;
+            case R.id.extend:
+                intent=new Intent(ExtendActivity.this,ExtendActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.transform:
+                intent=new Intent(ExtendActivity.this,TransformActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.help:
+                Toast.makeText(this,"This is a help!",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.exit:
+                System.exit(0);
+                break;
+            default:
+
+        }
+        return true;
+    }
+
 }

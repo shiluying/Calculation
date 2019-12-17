@@ -19,11 +19,7 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
-/**
- * Created by guaju on 2017/11/7.
- * https2负责任的一个请求类
- *
- */
+
 
 public class HttpUtilsSafe {
     private static HttpUtilsSafe httpUtils;
