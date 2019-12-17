@@ -46,7 +46,7 @@ public class Calculation {
         String str="";
         for(int i=0;i<text.length();i++) {
             if(text.charAt(i)=='%'){
-                int j=i;
+                int j=i-1;
                 while (j>=0){
                     if(number.indexOf(text.charAt(j)) >=0){
                         j--;
