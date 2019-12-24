@@ -175,6 +175,7 @@ public class TransformActivity extends MainActivity implements View.OnClickListe
         switch (item.getItemId()){
             case R.id.base:
                 intent=new Intent(TransformActivity.this,MainActivity.class);
+                startActivity(intent);
                 break;
             case R.id.extend:
                 intent=new Intent(TransformActivity.this,ExtendActivity.class);
@@ -182,7 +183,6 @@ public class TransformActivity extends MainActivity implements View.OnClickListe
                 break;
             case R.id.transform:
                 intent=new Intent(TransformActivity.this,TransformActivity.class);
-                startActivity(intent);
                 break;
             case R.id.help:
                 Toast.makeText(this,"This is a help!",Toast.LENGTH_SHORT).show();
